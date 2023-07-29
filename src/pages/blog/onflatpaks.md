@@ -1,5 +1,8 @@
 ---
 title: "Flatpak: Debunking Size Queens"
+eleventyNavigation:
+  key: Post of the Month
+  order: 3
 tags: linux, flatpak
 ---
 ### I often hear complaints about [Flatpaks](https://www.flatpak.org/) online, and most of them are inaccurate. 
