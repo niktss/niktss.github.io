@@ -42,7 +42,7 @@
 	a[href]:active {
 		color: var(--text-color-link-active);
 		background-color: #01E2C2;
-	}
+	
 	}
 	nav a{
 		color: #FFFFFF;
@@ -54,15 +54,19 @@
 	color: var(--text-color-link-active);
 	background-color: #F71F3C;
 }
-	.nav-item a[href]:hover{
-		background-color: #F71F3C;
-		color: #333;
 }
-}
+
 
 /* Global stylesheet */
 * {
 	box-sizing: border-box;
+}
+@keyframes coolstuffHover {
+	0% {background-color: #00FF0B;}
+	25% {background-color: #0075FF;}
+	50% {background-color: #FF8A00;}
+	75% {background-color: #FF00F4;}
+	100% {background-color: #F71F3C;}
 }
 
 html,
@@ -292,4 +296,21 @@ a[href].header-anchor:focus,
 
 h2 + .header-anchor {
 	font-size: 1.5em;
+}
+.coolstuff{
+	background-color: #00FF0B;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+}
+.coolstuff:hover{
+	animation-name: coolstuffHover;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction:alternate;
+}
+.coolstuff:hover a{
+	text-decoration: none;
+	color: #FFF;
+	background-color: unset;
 }
