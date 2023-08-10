@@ -1,0 +1,41 @@
+@import '../../../node_modules/bootstrap/scss/_functions.scss'; //lowkey want to murder whoever didnt include filepath debug error msgs for beginners
+@import '../../../node_modules/bootstrap/scss/_variables';
+@import '../../../node_modules/bootstrap/scss/_mixins'; 
+p{
+    text-align: justify;
+}
+
+.card-img-top{
+    max-width: 350px;
+    padding: 1em;
+}
+.card{
+    margin: 1em;
+}
+@include media-breakpoint-up(xs){ //seems useless?
+	#card-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-items: ;
+    }
+    .card{
+        max-width: 22em;
+    }
+}
+@include media-breakpoint-up(sm){ //seems useless?
+	#card-container{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+    .card{
+        max-width: 16em;
+        margin: 1em;
+        align-content: flex-end;
+    }
+}
+@include media-breakpoint-up(md){ //seems useless?
+	.card{
+        max-width: 19em;
+    }
+}
