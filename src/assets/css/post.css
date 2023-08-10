@@ -1,0 +1,39 @@
+p {
+  text-align: justify;
+}
+
+.card-img-top {
+  max-width: 350px;
+  padding: 1em;
+}
+
+.card {
+  margin: 1em;
+}
+
+#card-container {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card {
+  max-width: 22em;
+}
+
+@media (min-width: 576px) {
+  #card-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  .card {
+    max-width: 16em;
+    margin: 1em;
+    align-content: flex-end;
+  }
+}
+@media (min-width: 768px) {
+  .card {
+    max-width: 19em;
+  }
+}/*# sourceMappingURL=post.css.map */

@@ -44,7 +44,7 @@
 		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
 	</head>
 	<body>
-		<div class="container-sm">
+		<div class="col-10 m-auto">
 			<header>
 				<nav class="navbar navbar-expand-md bg-body-tertiary">
 				<h2 class="visually-hidden">Top level navigation menu</h2> {# accessibility/SEO? #}
@@ -71,7 +71,7 @@
 </nav>
 			</header>
 
-			<main id="skip">
+			<main>
 				{{ content | safe }}
 			</main>
 		</div>
