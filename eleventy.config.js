@@ -10,10 +10,10 @@ const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
 
+
 module.exports = function(eleventyConfig) {
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
-	eleventyConfig.addPassthroughCopy("./node_modules/prismjs/themes/prism-okaidia.css");
 	eleventyConfig.addPassthroughCopy("src/assets");
 
 	// Run Eleventy when these files change:
@@ -25,6 +25,8 @@ module.exports = function(eleventyConfig) {
 	// App plugins
 	eleventyConfig.addPlugin(pluginDrafts);
 	eleventyConfig.addPlugin(pluginImages);
+
+
 
 	// Official plugins
 	eleventyConfig.addPlugin(pluginRss);

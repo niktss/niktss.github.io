@@ -17,6 +17,32 @@ Flatpaks utilise shared dependencies, called *runtimes*. They can be indeed quit
 
 This can seem like installing an app via a package manager but with extra steps. However, flatpaks are, among other things, immune to [Dependency Hell](https://en.wikipedia.org/wiki/Dependency_hell) - every app guarantees compatibility with a specific runtime, which itself guarantees specific libraries & library versions availability, uncustomized by distributions. 
 
-### No more distro-specific bugs, no more incompatible dependencies, no more "library X not available on distro Y" - if a distro can run flatpak, it can run any app packaged as such.
+###  No more distro-specific bugs, no more incompatible dependencies, no more "library X not available on distro Y" - if a distro can run flatpak, it can run any app packaged as such.
 
 If Ubuntu/Debian and SUSE/Fedora (and Arch btw) really wanted to bury the hatchet and standardize on a single, targetable platform, they could have done so in the last 20 years. Flatpaks solve this dispute once and for all, and enable many more features, such as immutable OSes, sandboxing, portability, universal bugfixes/security patches in libraries, etc. But that is an article for another day.
+
+<div class="container d-flex" id="card-container">
+  <div class="card">
+    <div class="card-body ">
+      <h4 class="card-title">To sum up</h4>
+      <p class="card-text">Flatpak has a variety of benefits over traditional packages. This includes, but is not limited to:</p>
+      <ul>
+        <li>No Dependency Hell</li>
+        <li>Updates straight from upstream</li>
+        <li>No distro bugs(mostly!)</li>
+        <li>Single targetable dev platform</li>
+        <li>Portability between PCs</li>
+        <li>Sandboxing & permission management</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://flathub.org/img/logo/flathub-logo-mini.svg" class="card-img-top" alt="Flathub Logo, consisting of a circle, rounded triangle, a plus sign, and a rounded square, all arrayed clockwise in a square shape">
+    <div class="card-body">
+      <h5 class="card-title">Discover Flatpak apps</h5>
+      <p class="card-text">Flathub is the premier source for Flatpak apps. Discover your new favourite Linux app today!</p>
+      <a href="https://flathub.org/" target="_blank" class="btn btn-primary">Let's Browse</a>
+    </div>
+  </div>
+</div>

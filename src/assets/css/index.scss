@@ -1,0 +1,48 @@
+/* Global stylesheet */
+@import '../../../node_modules/bootstrap/scss/_functions.scss'; //lowkey want to murder whoever didnt include filepath debug error msgs for beginners
+@import '../../../node_modules/bootstrap/scss/_variables';
+@import '../../../node_modules/bootstrap/scss/_mixins'; 
+
+* {
+	box-sizing: border-box;
+}
+@keyframes md-nav-item-hover{
+	from{background-color: #F71F3C;
+		color: #000;}
+	to {background-color: #080808; 
+		color:#fff;}
+}
+@keyframes coolstuffHover {
+	0% {background-color: #F71F3C;}
+	25% {background-color: #0075FF;}
+	50% {background-color: #FF8A00;}
+	75% {background-color: #FF00F4;}
+	100% {background-color: #00FF0B;}
+}
+body{
+	background-color: #fbe34c;
+}
+.navbar{
+	background-color: #fbe34c !important;
+	color: #000;
+}
+@include media-breakpoint-down(md) { 
+	.nav-item{
+		background: linear-gradient(to right, #fce44d, #f71d3d) !important;
+	}
+	.nav-item .active{
+		font-size: 1.2em;
+	}
+}
+@include media-breakpoint-up(md){ //seems useless?
+	.header-colour{
+		background: linear-gradient(to right, #fce44d, #f71d3d) !important;
+	}
+	.coolstuff:hover{
+		animation: coolstuffHover 4s infinite alternate;
+		color: #fff;
+	}
+}
+.footer-logo{
+	height: 1em;
+}
