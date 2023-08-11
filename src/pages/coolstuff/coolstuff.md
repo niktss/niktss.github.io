@@ -20,11 +20,11 @@ eleventyNavigation:
 <div id="carouselExample" class="carousel slide carousel-fade container-fluid"  data-bs-ride="carousel">
   <div class="carousel-inner">
   <div class="carousel-item active"> {# need at least 1 active item; we can iterate the rest#}
-       <iframe src="http://www.isittoolateforcoffee.com/" title="http://www.isittoolateforcoffee.com/" class="container-fluid" height="1000px" loading="lazy"></iframe> {# read that lazy loading is a good idea, for my use case #}
+       <iframe src="http://www.isittoolateforcoffee.com/" title="http://www.isittoolateforcoffee.com/" class="container-fluid" height="1000px"></iframe> 
     </div>
     {% for bookmark in arrayBookmarks %}
       <div class="carousel-item">
-         <iframe src="{{bookmark}}" class="container-fluid" height="1000px" loading="lazy"></iframe> 
+         <iframe src="{{bookmark}}" class="container-fluid" height="1000px" loading="lazy"></iframe> {# read that lazy loading is a good idea, for my use case #}
       </div>
     {% endfor %}
   </div>
