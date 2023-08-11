@@ -6,21 +6,8 @@ eleventyNavigation:
   order: 6
 ---
 # A peek into my browser bookmarks. 
+## (remember to scroll down)
 <span style="font-size: 4pt;">Disclaimer: the following links do not constitute legal or medical advice. The author waives responsibility for any potential damage to you or your cat should you choose to educate yourself on random topics.</span>
-
-<!-- ### [Mysterious topic 1](http://www.isittoolateforcoffee.com/)
-
-### [Mysterious topic 2](https://en.wikipedia.org/wiki/Flatulence)
-
-### [Mysterious topic 3](https://www.youtube.com/watch?v=sHvUU8OWTC4)
-
-### [Mysterious topic 4](https://en.wikipedia.org/wiki/Taumatawhakatangi%C2%ADhangakoauauotamatea%C2%ADturipukakapikimaunga%C2%ADhoronukupokaiwhen%C2%ADuakitanatahu)
-
-### [Mysterious topic 5](https://security.stackexchange.com/questions/172212/how-do-mobile-carriers-know-video-resolution-over-https-connections)
-
-### [Mysterious topic 6](https://hannahmontana.sourceforge.net/about.html)
-
-### [Mysterious topic 7](https://www.youtube.com/watch?v=Y-rmzh0PI3c) -->
 
 {% set arrayBookmarks = [
   'https://en.wikipedia.org/wiki/Flatulence', 
@@ -30,22 +17,22 @@ eleventyNavigation:
   'https://hannahmontana.sourceforge.net/about.html', 
   'https://www.youtube.com/watch?v=Y-rmzh0PI3c']
 %}
-<div id="carouselExample" class="carousel slide container-fluid">
+<div id="carouselExample" class="carousel slide carousel-fade container-fluid"  data-bs-ride="carousel">
   <div class="carousel-inner">
-  <div class="carousel-item active">
-       <iframe src="http://www.isittoolateforcoffee.com/" title="http://www.isittoolateforcoffee.com/" class="container-fluid" height="1000px"></iframe> 
+  <div class="carousel-item active"> {# need at least 1 active item; we can iterate the rest#}
+       <iframe src="http://www.isittoolateforcoffee.com/" title="http://www.isittoolateforcoffee.com/" class="container-fluid" height="1000px" loading="lazy"></iframe> {# read that lazy loading is a good idea, for my use case #}
     </div>
     {% for bookmark in arrayBookmarks %}
       <div class="carousel-item">
-         <iframe src="{{bookmark}}" class="container-fluid" height="1000px"></iframe> 
+         <iframe src="{{bookmark}}" class="container-fluid" height="1000px" loading="lazy"></iframe> 
       </div>
     {% endfor %}
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+  <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+  <button class="carousel-control-next bg-dark" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
