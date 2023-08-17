@@ -63,6 +63,10 @@ body {
     align-self: center;
   }
 }
+.footer-logo {
+  height: 1em;
+}
+
 form fieldset {
   background: radial-gradient(ellipse at top left, #F71F3C, #fbe34c);
 }/*# sourceMappingURL=index.css.map */

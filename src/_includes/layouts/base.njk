@@ -75,7 +75,14 @@
 				{{ content | safe }}
 			</main>
 		</div>
-		<footer></footer>
+		
+  
+  <footer class="d-flex justify-content-center p-3 m-4 border-top border-black"> {# thank god for Bootstrap examples #}
+      <a href="/"><img class="footer-logo m-2" src="{{ '/assets/img/logo.png' | url }}" alt="logo"></a>
+	  <p>{{ helpers.currentYear() }}</p> {# thank god for Internet guides#}
+  </footer>
+
+
 
 		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
 	</body>
