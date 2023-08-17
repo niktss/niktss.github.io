@@ -3,46 +3,58 @@
 @import '../../../node_modules/bootstrap/scss/_variables';
 @import '../../../node_modules/bootstrap/scss/_mixins'; 
 
+$background-colour: #fbe34c;
+$secondary-colour: #F71F3C;
 * {
 	box-sizing: border-box;
 }
 @keyframes md-nav-item-hover{
-	from{background-color: #F71F3C;
+	from{background-color: $secondary-colour;
 		color: #000;}
 	to {background-color: #080808; 
 		color:#fff;}
 }
 @keyframes coolstuffHover {
-	0% {background-color: #F71F3C;}
+	0% {background-color: $secondary-colour;}
 	25% {background-color: #0075FF;}
 	50% {background-color: #FF8A00;}
 	75% {background-color: #FF00F4;}
 	100% {background-color: #00FF0B;}
 }
 body{
-	background-color: #fbe34c;
+	background-color: $background-colour;
 }
 .navbar{
-	background-color: #fbe34c !important;
+	background-color: $background-colour !important;
 	color: #000;
 }
 @include media-breakpoint-down(md) { 
 	.nav-item{
-		background: linear-gradient(to right, #fce44d, #f71d3d) !important;
+		background: linear-gradient(to right, $background-colour, $secondary-colour) !important;
 	}
 	.nav-item .active{
 		font-size: 1.2em;
 	}
 }
 @include media-breakpoint-up(md){ //seems useless?
+	main, footer, header{
+		max-width: 60em;
+	}
 	.header-colour{
-		background: linear-gradient(to right, #fce44d, #f71d3d) !important;
+		background: linear-gradient(to right, $background-colour, $secondary-colour) !important;
 	}
 	.coolstuff:hover{
 		animation: coolstuffHover 4s infinite alternate;
 		color: #fff;
 	}
+	form{
+		max-width: 35em;
+		align-self: center;
+	}
 }
 .footer-logo{
 	height: 1em;
+}
+form fieldset{
+	background: radial-gradient(ellipse at top left, $secondary-colour, $background-colour);
 }
