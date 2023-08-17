@@ -43,18 +43,18 @@
 		{# - Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
 		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
 	</head>
-	<body class="d-flex">
+	<body class="d-flex flex-column">
 		<div class="col-10 col-lg-8 m-auto">
 			<header class="pb-5">
-				<nav class="navbar navbar-expand-md bg-body-tertiary">
+				<nav class="navbar navbar-expand-md">
 				<h2 class="visually-hidden">Top level navigation menu</h2> {# accessibility/SEO? #}
 					<div class="container-fluid">
 							<a href="/"><img class="navbar-brand" width="200" src="{{ '/assets/img/logo.png' | url }}" alt="logo"></a>
 								<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
 								</button>
-									<div class="collapse navbar-collapse header-colour" id="navbarNav"> {# how exatcly header_colour works here is a beautiful mystery#}
-										<ul class="navbar-nav">
+									<div class="collapse navbar-collapse header-colour container d-flex align-content-end flex-row" id="navbarNav"> {# how exatcly header_colour works here is a beautiful mystery#}
+										<ul class="navbar-nav ">
 												{%- for entry in collections.all | eleventyNavigation %}
 													<li class="nav-item">
 														<a class="nav-link 
@@ -77,7 +77,7 @@
 		</div>
 		
   
-  <footer class="d-flex justify-content-center p-3 m-4 border-top border-black"> {# thank god for Bootstrap examples #}
+  <footer class="d-flex justify-content-center align-self-center p-4 m-auto w-100 border-top border-black"> {# thank god for Bootstrap examples #}
       <a href="/"><img class="footer-logo m-2" src="{{ '/assets/img/logo.png' | url }}" alt="logo"></a>
 	  <p>{{ helpers.currentYear() }}</p> {# thank god for Internet guides#}
   </footer>
