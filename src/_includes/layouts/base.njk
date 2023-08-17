@@ -43,9 +43,9 @@
 		{# - Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
 		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
 	</head>
-	<body>
-		<div class="col-10 m-auto">
-			<header>
+	<body class="d-flex">
+		<div class="col-10 col-lg-8 m-auto">
+			<header class="pb-5">
 				<nav class="navbar navbar-expand-md bg-body-tertiary">
 				<h2 class="visually-hidden">Top level navigation menu</h2> {# accessibility/SEO? #}
 					<div class="container-fluid">
@@ -71,7 +71,7 @@
 </nav>
 			</header>
 
-			<main>
+			<main class="d-flex flex-column">
 				{{ content | safe }}
 			</main>
 		</div>

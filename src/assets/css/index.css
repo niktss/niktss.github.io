@@ -41,18 +41,28 @@ body {
 
 @media (max-width: 767.98px) {
   .nav-item {
-    background: linear-gradient(to right, #fce44d, #f71d3d) !important;
+    background: linear-gradient(to right, #fbe34c, #F71F3C) !important;
   }
   .nav-item .active {
     font-size: 1.2em;
   }
 }
 @media (min-width: 768px) {
+  main {
+    max-width: 60em;
+  }
   .header-colour {
-    background: linear-gradient(to right, #fce44d, #f71d3d) !important;
+    background: linear-gradient(to right, #fbe34c, #F71F3C) !important;
   }
   .coolstuff:hover {
     animation: coolstuffHover 4s infinite alternate;
     color: #fff;
   }
+  form {
+    max-width: 35em;
+    align-self: center;
+  }
+}
+form fieldset {
+  background: radial-gradient(ellipse at top left, #F71F3C, #fbe34c);
 }/*# sourceMappingURL=index.css.map */
