@@ -53,8 +53,8 @@
 								<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
 								</button>
-									<div class="collapse navbar-collapse header-colour container d-flex align-content-end flex-row" id="navbarNav"> {# how exatcly header_colour works here is a beautiful mystery#}
-										<ul class="navbar-nav ">
+									<div class="navbar-collapse collapse header-colour" id="navbarNav"> {# how exatcly header_colour works here is a beautiful mystery#}
+										<ul class="navbar-nav">
 												{%- for entry in collections.all | eleventyNavigation %}
 													<li class="nav-item">
 														<a class="nav-link 

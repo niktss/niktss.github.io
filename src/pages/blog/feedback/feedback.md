@@ -3,7 +3,7 @@ title: Feedback re:last post
 ---
 In the face of incredible opposition from our better reason, we have decided to open a comment section & article feedback form. Please remain civil, although particularly amusing flame comments may be appreciated and/or published.
 
-<form action="/forms/submit.php">
+<form name="flatpak_feedback" netlify>
     <fieldset class="form-control p-3 pb-1">
         <div class="row"> {# want to make 2 column first & last name input #}
             <div class="col-sm">
@@ -19,7 +19,7 @@ In the face of incredible opposition from our better reason, we have decided to 
         </div>
 
         <div class="form-floating">
-            <input id="comment_email" name="email" type="email" class="col-xs-12 form-control" placeholder="E-mail address"><label for="comment_email">E-mail address</label>
+            <input id="comment_email" name="email" type="email" required class="col-xs-12 form-control" placeholder="E-mail address"><label for="comment_email">E-mail address</label>
         </div>
         
         <div class="form-floating">
