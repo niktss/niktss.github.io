@@ -3,7 +3,7 @@ title: Feedback re:last post
 ---
 In the face of incredible opposition from our better reason, we have decided to open a comment section & article feedback form. Please remain civil, although particularly amusing flame comments may be appreciated and/or published.
 
-<form action="submit.php">
+<form action="/forms/submit.php">
     <fieldset class="form-control p-3 pb-1">
         <div class="row"> {# want to make 2 column first & last name input #}
             <div class="col-sm">
