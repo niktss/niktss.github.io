@@ -1,9 +1,9 @@
 ---
-title: VISIONS FROM THE MULTIVERSE
+title: "VISIONS FROM THE MULTIVERSE"
 layout: layouts/home.njk
 eleventyNavigation:
-  key: Traverse the Multiverse
-  order: 6
+  key: "Traverse the Multiverse"
+  order: 7
 ---
 # A peek into my browser bookmarks. 
 ## (remember to scroll down)
